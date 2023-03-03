@@ -8,7 +8,7 @@ class CreditCard extends StatelessWidget {
       width: 250,
       padding: EdgeInsets.all(16.0),
       decoration: BoxDecoration(
-          color: Colors.deepPurple[700],
+          color: Colors.purple,
           borderRadius: BorderRadius.all(Radius.circular(10))),
       child: Column(
         mainAxisSize: MainAxisSize.min,

@@ -81,7 +81,7 @@ class QuickSendAmountPage extends StatelessWidget {
                               height: MediaQuery.of(context).size.height / 2.3,
                               padding: const EdgeInsets.all(16.0),
                               width: double.infinity,
-                              color: yellow,
+                              color: blue,
                               child: Column(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceAround,

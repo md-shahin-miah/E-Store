@@ -52,7 +52,7 @@ class MoreProducts extends StatelessWidget {
                       : index == 4
                       ? EdgeInsets.only(right: 24.0, left: 8.0)
                       : EdgeInsets.symmetric(horizontal: 8.0),
-                  child: ProductCard(product: products[index], height: 100,width: 200,));
+                  child: ProductCard(product: products[index], height: 220,width: 150,));
             },
             scrollDirection: Axis.horizontal,
           ),

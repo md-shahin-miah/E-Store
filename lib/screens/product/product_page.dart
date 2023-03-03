@@ -34,7 +34,7 @@ class _ProductPageState extends State<ProductPage> {
                 product: product,
               ))),
       child: Container(
-        height: 80,
+        height: 50,
         width: width / 1.5,
         decoration: BoxDecoration(
             gradient: mainButton,
@@ -58,7 +58,7 @@ class _ProductPageState extends State<ProductPage> {
     );
 
     return Scaffold(
-      backgroundColor: yellow,
+      backgroundColor: blue,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0.0,
@@ -86,7 +86,7 @@ class _ProductPageState extends State<ProductPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 SizedBox(
-                  height: 80.0,
+                  height: 30.0,
                 ),
                 ProductDisplay(
                   product: product,
@@ -157,8 +157,8 @@ class _ProductPageState extends State<ProductPage> {
                   gradient: LinearGradient(
                       colors: [
                     Color.fromRGBO(255, 255, 255, 0),
-                    Color.fromRGBO(253, 192, 84, 0.5),
-                    Color.fromRGBO(253, 192, 84, 1),
+                    Color.fromRGBO(248, 219, 167, 0.5019607843137255),
+                    Color.fromRGBO(252, 209, 134, 0.8),
                   ],
                       begin: FractionalOffset.topCenter,
                       end: FractionalOffset.bottomCenter)),

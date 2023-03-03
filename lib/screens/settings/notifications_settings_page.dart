@@ -27,7 +27,7 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
           });
         },
         value: true,
-        activeColor: yellow,
+        activeColor: blue,
       );
     } else {
       return Switch(
@@ -37,7 +37,7 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
           });
         },
         value: val,
-        activeColor: yellow,
+        activeColor: blue,
       );
     }
   }

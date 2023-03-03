@@ -18,7 +18,7 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
   @override
   Widget build(BuildContext context) {
     Widget welcomeBack = Text(
-      'Welcome Back Roberto,',
+      'Welcome Back ',
       style: TextStyle(
           color: Colors.white,
           fontSize: 34.0,
@@ -44,7 +44,7 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
 
     Widget loginButton = Positioned(
       left: MediaQuery.of(context).size.width / 4,
-      bottom: 40,
+      bottom: 50,
       child: InkWell(
         onTap: () {
           Navigator.of(context)
@@ -52,7 +52,7 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
         },
         child: Container(
           width: MediaQuery.of(context).size.width / 2,
-          height: 80,
+          height: 50,
           child: Center(
               child: new Text("Log In",
                   style: const TextStyle(
@@ -61,14 +61,7 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
                       fontStyle: FontStyle.normal,
                       fontSize: 20.0))),
           decoration: BoxDecoration(
-              gradient: LinearGradient(
-                  colors: [
-                    Color.fromRGBO(236, 60, 3, 1),
-                    Color.fromRGBO(234, 60, 3, 1),
-                    Color.fromRGBO(216, 78, 16, 1),
-                  ],
-                  begin: FractionalOffset.topCenter,
-                  end: FractionalOffset.bottomCenter),
+              gradient: mainButton,
               boxShadow: [
                 BoxShadow(
                   color: Color.fromRGBO(0, 0, 0, 0.16),
@@ -155,13 +148,13 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
 
           Container(
             decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage('assets/background.jpg'),
+              image: DecorationImage(image: AssetImage('assets/shopladie.png'),
                   fit: BoxFit.cover)
             ),
           ),
           Container(
             decoration: BoxDecoration(
-                color: transparentYellow,
+                color: transparentBlue,
 
             ),
           ),

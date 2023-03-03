@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:country_code_picker/country_code_picker.dart';
 
 
 import '../../app_properties.dart';
@@ -26,11 +25,11 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
       margin: EdgeInsets.only(right: 4.0),
       decoration: BoxDecoration(
           border: Border(bottom: BorderSide(color: Colors.black, width: 0.5))),
-      child: CountryCodePicker(
-        initialSelection: 'GT',
-
-        favorite: ['+1','US'],
-      )
+      // child: CountryCodePicker(
+      //   initialSelection: 'GT',
+      //
+      //   favorite: ['+1','US'],
+      // )
     );
   }
 
@@ -39,9 +38,9 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
     Widget background = Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-            image: AssetImage('assets/background.jpg'), fit: BoxFit.cover),
+            image: AssetImage('assets/shopladie.png'), fit: BoxFit.cover),
       ),
-      foregroundDecoration: BoxDecoration(color: transparentYellow),
+      foregroundDecoration: BoxDecoration(color: transparentBlue),
     );
 
     Widget title = Text(
@@ -71,14 +70,14 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
 
     Widget sendButton = Positioned(
       left: MediaQuery.of(context).size.width / 4,
-      bottom: 40,
+      bottom: 80,
       child: InkWell(
         onTap: () {
           Navigator.of(context).push(MaterialPageRoute(builder:(_)=>ConfirmOtpPage()));
         },
         child: Container(
           width: MediaQuery.of(context).size.width / 2,
-          height: 80,
+          height: 50,
           child: Center(
               child: new Text("Send OTP",
                   style: const TextStyle(
@@ -87,14 +86,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                       fontStyle: FontStyle.normal,
                       fontSize: 20.0))),
           decoration: BoxDecoration(
-              gradient: LinearGradient(
-                  colors: [
-                    Color.fromRGBO(236, 60, 3, 1),
-                    Color.fromRGBO(234, 60, 3, 1),
-                    Color.fromRGBO(216, 78, 16, 1),
-                  ],
-                  begin: FractionalOffset.topCenter,
-                  end: FractionalOffset.bottomCenter),
+              gradient: mainButton,
               boxShadow: [
                 BoxShadow(
                   color: Color.fromRGBO(0, 0, 0, 0.16),
@@ -173,13 +165,13 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
       child: Container(
         decoration:BoxDecoration(
             image:DecorationImage(
-                image: AssetImage('assets/background.jpg'),
+                image: AssetImage('assets/shopladie.png'),
                 fit: BoxFit.cover
             )
         ),
         child: Container(
           decoration: BoxDecoration(
-            color:transparentYellow
+            color:transparentBlue
           ),
           child: Scaffold(
             appBar: AppBar(

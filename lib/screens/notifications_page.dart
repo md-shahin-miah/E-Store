@@ -271,7 +271,7 @@ class NotificationsPage extends StatelessWidget {
                             child: Container(
                                 padding: const EdgeInsets.all(14.0),
                                 decoration: BoxDecoration(
-                                    color: yellow,
+                                    color: blue,
                                     borderRadius: BorderRadius.only(
                                         bottomRight: Radius.circular(5.0),
                                         bottomLeft: Radius.circular(5.0))),
@@ -350,7 +350,7 @@ class NotificationsPage extends StatelessWidget {
                             child: Container(
                                 padding: const EdgeInsets.all(14.0),
                                 decoration: BoxDecoration(
-                                    color: yellow,
+                                    color: blue,
                                     borderRadius: BorderRadius.only(
                                         bottomRight: Radius.circular(5.0),
                                         bottomLeft: Radius.circular(5.0))),

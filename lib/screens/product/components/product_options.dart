@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 
 import '../../../app_properties.dart';
 import '../../../models/product.dart';
@@ -73,9 +74,15 @@ class ProductOption extends StatelessWidget {
                   ),
                   InkWell(
                     onTap: () {
-                      scaffoldKey.currentState!.showBottomSheet((context) {
-                        return ShopBottomSheet();
-                      });
+                      showBarModalBottomSheet(
+                        expand: true,
+                        context: context,
+                        backgroundColor: Colors.transparent,
+                        builder: (context) => ShopBottomSheet(),
+                      );
+                      // scaffoldKey.currentState!.showBottomSheet((context) {
+                      //   return ShopBottomSheet();
+                      // });
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width / 2.5,

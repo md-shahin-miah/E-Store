@@ -1,7 +1,7 @@
 
+import 'package:flutter/material.dart' hide ModalBottomSheetRoute;
 
-import 'package:flutter/material.dart';
-
+// import 'package:flutter/material.dart' ;
 import '../../../app_properties.dart';
 import '../../../models/product.dart';
 import '../../shop/check_out_page.dart';

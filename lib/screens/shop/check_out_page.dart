@@ -31,7 +31,7 @@ class _CheckOutPageState extends State<CheckOutPage> {
       onTap: () => Navigator.of(context)
           .push(MaterialPageRoute(builder: (_) => AddAddressPage())),
       child: Container(
-        height: 80,
+        height: 50,
         width: MediaQuery.of(context).size.width / 1.5,
         decoration: BoxDecoration(
             gradient: mainButton,
@@ -84,7 +84,7 @@ class _CheckOutPageState extends State<CheckOutPage> {
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 32.0),
                   height: 48.0,
-                  color: yellow,
+                  color: blue,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[

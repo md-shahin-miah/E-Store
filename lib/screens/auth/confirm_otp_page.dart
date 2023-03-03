@@ -79,7 +79,7 @@ class _ConfirmOtpPageState extends State<ConfirmOtpPage> {
         },
         child: Container(
           width: MediaQuery.of(context).size.width / 2,
-          height: 80,
+          height: 50,
           child: Center(
               child: new Text("Verify",
                   style: const TextStyle(
@@ -88,14 +88,7 @@ class _ConfirmOtpPageState extends State<ConfirmOtpPage> {
                       fontStyle: FontStyle.normal,
                       fontSize: 20.0))),
           decoration: BoxDecoration(
-              gradient: LinearGradient(
-                  colors: [
-                    Color.fromRGBO(236, 60, 3, 1),
-                    Color.fromRGBO(234, 60, 3, 1),
-                    Color.fromRGBO(216, 78, 16, 1),
-                  ],
-                  begin: FractionalOffset.topCenter,
-                  end: FractionalOffset.bottomCenter),
+              gradient: mainButton,
               boxShadow: [
                 BoxShadow(
                   color: Color.fromRGBO(0, 0, 0, 0.16),
@@ -153,9 +146,9 @@ class _ConfirmOtpPageState extends State<ConfirmOtpPage> {
       child: Container(
         decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('assets/background.jpg'), fit: BoxFit.cover)),
+                image: AssetImage('assets/shopladie.png'), fit: BoxFit.cover)),
         child: Container(
-          decoration: BoxDecoration(color: transparentYellow),
+          decoration: BoxDecoration(color: transparentBlue),
           child: Scaffold(
             appBar: AppBar(
               backgroundColor: Colors.transparent,
@@ -187,8 +180,8 @@ class _ConfirmOtpPageState extends State<ConfirmOtpPage> {
                             hasTextBorderColor: Colors.transparent,
                             highlightPinBoxColor: Colors.white,
                             autofocus: true,
-                            pinBoxHeight: 60,
-                            pinBoxWidth: 60,
+                            pinBoxHeight: 50,
+                            pinBoxWidth: 50,
                             pinBoxRadius: 5,
                             defaultBorderColor: Colors.transparent,
                             pinBoxColor: Color.fromRGBO(255, 255, 255, 0.8),

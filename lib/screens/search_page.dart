@@ -341,7 +341,9 @@ class _SearchPageState extends State<SearchPage>
           lowerLayer: _getLowerLayer(), // The underlying page (Widget)
           upperLayer: _getUpperLayer(), // The bottomsheet content (Widget)
           animationController: _controller, // The one we created earlier
-        )),
+        )
+
+        ),
       ),
     );
   }

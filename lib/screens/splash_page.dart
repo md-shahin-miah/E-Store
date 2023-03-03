@@ -18,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen>
   void initState() {
     super.initState();
     controller = AnimationController(
-        duration: Duration(milliseconds: 2500), vsync: this);
+        duration: Duration(milliseconds: 3500), vsync: this);
     opacity = Tween<double>(begin: 1.0, end: 0.0).animate(controller)
       ..addListener(() {
         setState(() {});
@@ -43,9 +43,9 @@ class _SplashScreenState extends State<SplashScreen>
     return Container(
       decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('assets/background.jpg'), fit: BoxFit.cover)),
+              image: AssetImage('assets/shopladie.png'), fit: BoxFit.cover)),
       child: Container(
-        decoration: BoxDecoration(color: transparentYellow),
+        decoration: BoxDecoration(color: transparentBlue),
         child: SafeArea(
           child: new Scaffold(
             body: Column(

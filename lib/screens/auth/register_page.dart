@@ -48,7 +48,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
     Widget registerButton = Positioned(
       left: MediaQuery.of(context).size.width / 4,
-      bottom: 40,
+      bottom: 50,
       child: InkWell(
         onTap: () {
           Navigator.of(context)
@@ -56,7 +56,7 @@ class _RegisterPageState extends State<RegisterPage> {
         },
         child: Container(
           width: MediaQuery.of(context).size.width / 2,
-          height: 80,
+          height: 50,
           child: Center(
               child: new Text("Register",
                   style: const TextStyle(
@@ -155,13 +155,13 @@ class _RegisterPageState extends State<RegisterPage> {
                 children: <Widget>[
                   Container(
                     decoration: BoxDecoration(
-                        image: DecorationImage(image: AssetImage('assets/background.jpg'),
+                        image: DecorationImage(image: AssetImage('assets/shopladie.png'),
                             fit: BoxFit.cover)
                     ),
                   ),
                   Container(
                     decoration: BoxDecoration(
-                      color: transparentYellow,
+                      color: transparentBlue,
 
                     ),
                   ),

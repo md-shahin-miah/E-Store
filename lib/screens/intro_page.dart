@@ -19,7 +19,7 @@ class _IntroPageState extends State<IntroPage> {
 //      width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
             color: Colors.grey[100],
-            image: DecorationImage(image: AssetImage('assets/background.png'))),
+            image: DecorationImage(image: AssetImage('assets/back.png'))),
         child: Stack(
           children: <Widget>[
             PageView(
@@ -141,7 +141,7 @@ class _IntroPageState extends State<IntroPage> {
                           decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               border: Border.all(color: Colors.black, width: 2),
-                              color: pageIndex == 0 ? yellow : Colors.white),
+                              color: pageIndex == 0 ? blue : Colors.white),
                         ),
                         Container(
                           margin: EdgeInsets.all(8.0),
@@ -150,7 +150,7 @@ class _IntroPageState extends State<IntroPage> {
                           decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               border: Border.all(color: Colors.black, width: 2),
-                              color: pageIndex == 1 ? yellow : Colors.white),
+                              color: pageIndex == 1 ? blue : Colors.white),
                         ),
                         Container(
                           margin: EdgeInsets.all(8.0),
@@ -159,7 +159,7 @@ class _IntroPageState extends State<IntroPage> {
                           decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               border: Border.all(color: Colors.black, width: 2),
-                              color: pageIndex == 2 ? yellow : Colors.white),
+                              color: pageIndex == 2 ? blue : Colors.white),
                         )
                       ],
                     ),

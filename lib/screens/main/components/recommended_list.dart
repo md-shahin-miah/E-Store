@@ -34,7 +34,7 @@ class RecommendedList extends StatelessWidget {
                 child: Container(
                   margin: const EdgeInsets.only(left: 16.0, right: 8.0),
                   width: 4,
-                  color: mediumYellow,
+                  color: mediumBlue,
                 ),
               ),
               Center(
@@ -65,8 +65,8 @@ class RecommendedList extends StatelessWidget {
                       decoration: BoxDecoration(
                         gradient: RadialGradient(
                             colors: [
-                              Colors.grey.withOpacity(0.3),
-                              Colors.grey.withOpacity(0.7),
+                              Colors.grey.withOpacity(0.1),
+                              Colors.grey.withOpacity(0.5),
                             ],
                             center: Alignment(0, 0),
                             radius: 0.6,

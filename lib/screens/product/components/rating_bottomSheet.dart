@@ -1,5 +1,5 @@
 
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' ;
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 import '../../../app_properties.dart';
@@ -30,7 +30,7 @@ class _RatingBottomSheetState extends State<RatingBottomSheet> {
                 height: 92,
                 width: 92,
                 decoration: BoxDecoration(
-                    color: yellow,
+                    color: blue,
                     shape: BoxShape.circle,
                     boxShadow: shadow,
                     border: Border.all(width: 8.0, color: Colors.white)),

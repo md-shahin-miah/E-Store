@@ -21,7 +21,7 @@ class ProductDisplay extends StatelessWidget {
             right: 0,
             child: Container(
                 width: MediaQuery.of(context).size.width / 1.5,
-                height: 85,
+                height: 65,
                 padding: EdgeInsets.only(right: 24),
                 decoration: new BoxDecoration(
                     color: darkGrey,
