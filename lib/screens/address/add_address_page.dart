@@ -14,7 +14,7 @@ class AddAddressPage extends StatelessWidget {
           MaterialPageRoute(
               builder: (_) => SelectCardPage())),
       child: Container(
-        height: 60,
+        height: 50,
         width: MediaQuery.of(context).size.width / 1.5,
         decoration: BoxDecoration(
             gradient: mainButton,

@@ -49,7 +49,7 @@ class _ChangeCountryPageState extends State<ChangeLanguagePage> {
               Padding(
                 padding: const EdgeInsets.only(bottom: 16.0),
                 child: Text(
-                  'Language A / का',
+                  'Language A / আ',
                   style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,

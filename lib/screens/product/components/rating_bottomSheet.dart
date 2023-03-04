@@ -16,6 +16,7 @@ class _RatingBottomSheetState extends State<RatingBottomSheet> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.all(10),
       height: MediaQuery.of(context).size.height,
       decoration: BoxDecoration(
           color: Color.fromRGBO(255, 255, 255, 0.9),
@@ -131,7 +132,7 @@ class _RatingBottomSheetState extends State<RatingBottomSheet> {
                                       MainAxisAlignment.spaceBetween,
                                   children: <Widget>[
                                     Text(
-                                      'Billy Holand',
+                                      'Shahin Miah',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold),
                                     ),

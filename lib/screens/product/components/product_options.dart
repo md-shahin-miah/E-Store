@@ -44,7 +44,7 @@ class ProductOption extends StatelessWidget {
                         textAlign: TextAlign.right,
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            color: Colors.white,
+                            color: Colors.blue,
                             shadows: shadow)),
                   ),
                   InkWell(

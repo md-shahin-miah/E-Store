@@ -17,7 +17,7 @@ class _UnpaidPageState extends State<UnpaidPage> {
 //      onTap: () => Navigator.of(context)
 //          .push(MaterialPageRoute(builder: (_) => ViewProductPage())),
       child: Container(
-        height: 80,
+        height: 50,
         width: MediaQuery.of(context).size.width / 1.5,
         decoration: BoxDecoration(
             gradient: mainButton,

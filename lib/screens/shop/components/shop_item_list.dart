@@ -23,15 +23,15 @@ class _ShopItemListState extends State<ShopItemList> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 20),
+      margin: EdgeInsets.only(top: 10),
       height: 130,
       child: Stack(
         children: <Widget>[
           Align(
-            alignment: Alignment(0, 0.8),
+            alignment: Alignment(0, 0.9),
             child: Container(
                 height: 100,
-                margin: EdgeInsets.symmetric(horizontal: 16.0),
+                margin: EdgeInsets.symmetric(horizontal: 10.0),
                 decoration: BoxDecoration(
                     color: Colors.white,
                     boxShadow: shadow,
@@ -42,7 +42,7 @@ class _ShopItemListState extends State<ShopItemList> {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: <Widget>[
                       Container(
-                        padding: EdgeInsets.only(top: 12.0, right: 12.0),
+                        padding: EdgeInsets.only(top: 12.0, right: 2.0),
                         width: 200,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -88,7 +88,7 @@ class _ShopItemListState extends State<ShopItemList> {
                               textTheme: TextTheme(
                                 headline6: TextStyle(
                                     fontFamily: 'Montserrat',
-                                    fontSize: 14,
+                                    fontSize: 12,
                                     color: Colors.black,
                                     fontWeight: FontWeight.bold),
                                 bodyText1: TextStyle(

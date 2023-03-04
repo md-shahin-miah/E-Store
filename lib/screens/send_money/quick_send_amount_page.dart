@@ -17,7 +17,7 @@ class QuickSendAmountPage extends StatelessWidget {
     Widget payNow = InkWell(
       onTap: () {},
       child: Container(
-        height: 80,
+        height: 50,
         width: width / 1.5,
         // width: width / 1.5,
         decoration: BoxDecoration(

@@ -10,19 +10,19 @@ class TrackingPage extends StatefulWidget {
 
 class _TrackingPageState extends State<TrackingPage> {
   final List<Location> locations = [
-    Location('Kolkata Facility', DateTime(2019, 6, 5, 5, 23, 4),
+    Location('DHAKA Courier', DateTime(2023, 6, 5, 5, 23, 4),
         showHour: false, isHere: false, passed: true),
-    Location('Hyderabad Facility', DateTime(2019, 6, 6, 5, 23, 4),
-        showHour: false, isHere: false, passed: true),
+    Location('Sylhet Courier', DateTime(2023, 6, 6, 5, 23, 4),
+        showHour: false, isHere: true, passed: true),
     Location(
-      'Chennai Facility',
-      DateTime(2019, 6, 9, 5, 23, 4),
+      'Moulvibazar Courier',
+      DateTime(2023, 6, 9, 5, 23, 4),
       showHour: false,
-      isHere: true,
+      isHere: false,
     ),
     Location(
-      'Kerala Facility',
-      DateTime(2019, 6, 10, 5, 23, 4),
+      'Kulaura Courier',
+      DateTime(2023, 6, 10, 5, 23, 4),
       showHour: true,
       isHere: false,
     ),
@@ -33,12 +33,14 @@ class _TrackingPageState extends State<TrackingPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-          color: Colors.grey[100],
-          image: DecorationImage(
-              image: AssetImage('assets/Group 444.png'), fit: BoxFit.contain)),
+      // decoration: BoxDecoration(
+      //     color: Colors.grey[100],
+      //     image: DecorationImage(
+      //         image: AssetImage('assets/loca.png'), fit: BoxFit.contain)
+      //
+      // ),
       child: Container(
-        color: Colors.white54,
+        color: Colors.white,
         child: Scaffold(
             appBar: AppBar(
               backgroundColor: Colors.transparent,
@@ -65,7 +67,7 @@ class _TrackingPageState extends State<TrackingPage> {
                       margin: const EdgeInsets.symmetric(horizontal: 16.0),
                       padding: const EdgeInsets.symmetric(horizontal: 16.0),
                       decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: Colors.cyan,
                           borderRadius: BorderRadius.all(Radius.circular(5))),
                       child: DropdownButtonHideUnderline(
                         child: DropdownButton(
@@ -80,7 +82,8 @@ class _TrackingPageState extends State<TrackingPage> {
                             return DropdownMenuItem<String>(
                               value: val,
                               child: Container(
-                                  color: Colors.white,
+                                padding: EdgeInsets.symmetric(vertical: 4,horizontal: 10),
+                                  color: Colors.cyan,
                                   child: Align(
                                       alignment: Alignment.centerLeft,
                                       child: Text(

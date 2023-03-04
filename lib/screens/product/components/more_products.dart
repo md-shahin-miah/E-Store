@@ -35,11 +35,11 @@ class MoreProducts extends StatelessWidget {
           padding: const EdgeInsets.only(left: 24.0, bottom: 8.0),
           child: Text(
             'More products',
-            style: TextStyle(color: Colors.white, shadows: shadow),
+            style: TextStyle(color: Colors.black, shadows: shadow),
           ),
         ),
         Container(
-          margin: EdgeInsets.only(bottom: 20.0),
+          margin: EdgeInsets.only(bottom: 10.0,top: 10),
           height: 250,
           child: ListView.builder(
             itemCount: products.length,

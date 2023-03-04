@@ -116,7 +116,7 @@ class _WalletPageState extends State<WalletPage> with TickerProviderStateMixin {
                         Center(
                           child: Container(
                             width: openOptions.value,
-                            height: 80,
+                            height: 50,
                             padding: const EdgeInsets.symmetric(horizontal: 32),
                             decoration: BoxDecoration(
                                 color: Colors.white,

@@ -17,7 +17,7 @@ class _ChangePasswordPageState extends State<ChangePasswordPage> {
     Widget changePasswordButton = InkWell(
       onTap: () {},
       child: Container(
-        height: 80,
+        height: 50,
         width: width / 1.5,
         decoration: BoxDecoration(
             gradient: mainButton,
@@ -87,7 +87,7 @@ class _ChangePasswordPageState extends State<ChangePasswordPage> {
                           ),
                           Container(
                               padding: const EdgeInsets.symmetric(
-                                  horizontal: 16.0, vertical: 8.0),
+                                  horizontal: 16.0, vertical: 4.0),
                               decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius:
@@ -108,7 +108,7 @@ class _ChangePasswordPageState extends State<ChangePasswordPage> {
                           ),
                           Container(
                               padding: const EdgeInsets.symmetric(
-                                  horizontal: 16.0, vertical: 8.0),
+                                  horizontal: 16.0, vertical: 4.0),
                               decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius:
@@ -129,7 +129,7 @@ class _ChangePasswordPageState extends State<ChangePasswordPage> {
                           ),
                           Container(
                               padding: const EdgeInsets.symmetric(
-                                  horizontal: 16.0, vertical: 8.0),
+                                  horizontal: 16.0, vertical: 4.0),
                               decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius:
@@ -146,7 +146,7 @@ class _ChangePasswordPageState extends State<ChangePasswordPage> {
                         alignment: Alignment.bottomCenter,
                         child: Container(
                           padding: EdgeInsets.only(
-                              top: 8.0,
+                              top: 1.0,
                               bottom: bottomPadding != 20 ? 20 : bottomPadding),
                           width: width,
                           child: Center(child: changePasswordButton),

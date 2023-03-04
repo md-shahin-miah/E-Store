@@ -37,7 +37,7 @@ class ProductList extends StatelessWidget {
               print(
                   "The itemCount is too big, we suggest use FractionPaginationBuilder instead of DotSwiperPaginationBuilder in this sitituation");
             }
-            Color activeColor = Colors.purpleAccent;
+            Color activeColor = Colors.white;
             Color color = Colors.grey.withOpacity(.3);
             double size = 10.0;
             double space = 5.0;
@@ -114,12 +114,19 @@ class ProductCard extends StatelessWidget {
       child: Stack(
         children: <Widget>[
           Container(
-            margin: const EdgeInsets.only(left: 30),
+            margin: const EdgeInsets.only(left: 10,right: 10,bottom: 10,top: 20),
             height: height,
             width: width,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.all(Radius.circular(24)),
-              color: Colors.purpleAccent,
+              color: Colors.white,
+              boxShadow: [
+                BoxShadow(
+                  color: Color.fromRGBO(0, 0, 0, 0.15),
+                  offset: Offset(1, 8),
+                  blurRadius: 10.0,
+                )
+              ],
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
@@ -128,7 +135,7 @@ class ProductCard extends StatelessWidget {
                 IconButton(
                   icon: Icon(Icons.favorite_border),
                   onPressed: () {},
-                  color: Colors.white,
+                  color: Colors.blue,
                 ),
                 Column(
                   children: <Widget>[
@@ -139,7 +146,7 @@ class ProductCard extends StatelessWidget {
                           child: Text(
                             product.name,
                             style:
-                                TextStyle(color: Colors.white, fontSize: 16.0),
+                                TextStyle(color: Colors.black, fontSize: 16.0),
                           ),
                         )),
                     Align(

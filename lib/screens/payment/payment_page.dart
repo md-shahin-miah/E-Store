@@ -193,7 +193,7 @@ class _PaymentPageState extends State<PaymentPage> {
                     ),
                     Container(
                       padding: EdgeInsets.all(16.0),
-                      height: 250,
+                      height: 240,
                       width: MediaQuery.of(context).size.width,
                       decoration: BoxDecoration(
                           color: Colors.white,

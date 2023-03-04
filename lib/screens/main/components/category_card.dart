@@ -13,9 +13,9 @@ class CategoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(30))
-      ),
+      // decoration: BoxDecoration(
+      //     borderRadius: BorderRadius.all(Radius.circular(30))
+      // ),
       child: Card(
           margin: EdgeInsets.symmetric(horizontal: 5,vertical: 10),
           elevation: 5,

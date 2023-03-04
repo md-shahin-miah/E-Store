@@ -56,10 +56,10 @@ class ShopProductDisplay extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 150,
-      width: 200,
+      width: 180,
       child: Stack(children: <Widget>[
         Positioned(
-          left: 25,
+          left: 0,
           child: SizedBox(
             height: 150,
             width: 150,
@@ -70,7 +70,7 @@ class ShopProductDisplay extends StatelessWidget {
           ),
         ),
         Positioned(
-          left: 50,
+          left: 10,
           top: 5,
           child: SizedBox(
               height: 80,

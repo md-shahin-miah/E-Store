@@ -50,7 +50,7 @@ class SettingsPage extends StatelessWidget {
                     ),
                   ),
                   ListTile(
-                    title: Text('Language A / का'),
+                    title: Text('Language A / আ'),
                     leading: Image.asset('assets/icons/language.png'),
                     onTap: () => Navigator.of(context).push(
                         MaterialPageRoute(builder: (_) => ChangeLanguagePage())),

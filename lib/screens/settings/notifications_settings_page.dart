@@ -61,7 +61,7 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
       body: SafeArea(
         bottom: true,
         child: Padding(
-          padding: const EdgeInsets.only(top:24.0,left: 24.0, right: 24.0),
+          padding: const EdgeInsets.only(top:14.0,left: 24.0, right: 24.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[

@@ -59,19 +59,20 @@ class _ViewProductPageState extends State<ViewProductPage> {
   @override
   Widget build(BuildContext context) {
     Widget description = Padding(
-      padding: const EdgeInsets.all(24.0),
+      padding: const EdgeInsets.symmetric(vertical: 10,horizontal: 24),
+
       child: Text(
         widget.product.description,
         maxLines: 5,
         semanticsLabel: '...',
         overflow: TextOverflow.ellipsis,
-        style: TextStyle(color: Color.fromRGBO(255, 255, 255, 0.6)),
+        style: TextStyle(color: Color.fromRGBO(0, 0, 0, 1.0)),
       ),
     );
 
     return Scaffold(
         key: _scaffoldKey,
-        backgroundColor: blue,
+        backgroundColor: Colors.white,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0.0,
@@ -89,7 +90,7 @@ class _ViewProductPageState extends State<ViewProductPage> {
           title: Text(
             'Headphones',
             style: const TextStyle(
-                color: darkGrey,
+                color: Colors.black,
                 fontWeight: FontWeight.w500,
                 fontFamily: "Montserrat",
                 fontSize: 18.0),
@@ -106,7 +107,7 @@ class _ViewProductPageState extends State<ViewProductPage> {
                 ),
                 description,
                 Padding(
-                  padding: const EdgeInsets.all(24.0),
+                  padding: const EdgeInsets.symmetric(vertical: 10,horizontal: 24),
                   child: Row(mainAxisSize: MainAxisSize.min, children: <Widget>[
                     Flexible(
                       child: ColorList([
@@ -120,7 +121,6 @@ class _ViewProductPageState extends State<ViewProductPage> {
                     RawMaterialButton(
                       onPressed: () {
 
-
                         showBarModalBottomSheet(
                           context: context,
                           builder: (context) {
@@ -133,10 +133,10 @@ class _ViewProductPageState extends State<ViewProductPage> {
                       constraints:
                           const BoxConstraints(minWidth: 45, minHeight: 45),
                       child: Icon(Icons.favorite,
-                          color: Color.fromRGBO(255, 137, 147, 1)),
+                          color: Color.fromRGBO(248, 55, 71, 1.0)),
                       elevation: 0.0,
                       shape: CircleBorder(),
-                      fillColor: Color.fromRGBO(255, 255, 255, 0.4),
+                      fillColor: Color.fromRGBO(222, 184, 184, 0.4),
                     ),
                   ]),
                 ),

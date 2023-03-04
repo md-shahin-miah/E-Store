@@ -84,7 +84,7 @@ class _CheckOutPageState extends State<CheckOutPage> {
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 32.0),
                   height: 48.0,
-                  color: blue,
+                  color: Colors.blueGrey,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
