@@ -10,14 +10,14 @@ class PromoItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 20),
-      height: 280,
+      margin: EdgeInsets.only(top: 10,left: 5),
+      height: 250,
       child: Stack(
         children: <Widget>[
           Align(
             alignment: Alignment(0, 0.8),
             child: Container(
-                height: 250,
+                height: 240,
                 margin: EdgeInsets.symmetric(horizontal: 16.0),
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -32,7 +32,7 @@ class PromoItem extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Container(
-                            padding: EdgeInsets.only(top: 12.0, right: 12.0),
+                            padding: EdgeInsets.only(top: 8.0, right: 12.0),
                             width: 200,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -102,7 +102,7 @@ class PromoItem extends StatelessWidget {
                         ]),
                     Container(
                       padding: EdgeInsets.only(
-                          left: 16.0, right: 16.0, top: 32.0, bottom: 16.0),
+                          left: 16.0, right: 16.0, top: 22.0, bottom: 16.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[

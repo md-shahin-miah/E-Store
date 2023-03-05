@@ -281,17 +281,18 @@ class _WalletPageState extends State<WalletPage> with TickerProviderStateMixin {
                   Flexible(
                     child: Container(
                       height: 232,
-                      color: Color(0xffFAF1E2),
                       padding: const EdgeInsets.symmetric(vertical: 16.0),
                       child: ListView.builder(
+                        padding: EdgeInsets.only(left: 10,right: 10),
                         scrollDirection: Axis.horizontal,
                         itemCount: 10,
                         itemBuilder: (_, index) => Container(
-                          margin: const EdgeInsets.symmetric(horizontal: 8.0),
+                          margin: const EdgeInsets.symmetric(horizontal: 4.0,vertical: 6),
                           padding: const EdgeInsets.all(16.0),
                           width: 140,
                           decoration: BoxDecoration(
                               color: Colors.white,
+                              boxShadow: shadow,
                               borderRadius:
                                   BorderRadius.all(Radius.circular(10))),
                           child: Column(

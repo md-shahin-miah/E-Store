@@ -73,10 +73,10 @@ class _RatingBottomSheetState extends State<RatingBottomSheet> {
                       itemPadding: EdgeInsets.symmetric(horizontal: 4.0),
                       ratingWidget: RatingWidget(
                         empty: Icon(Icons.favorite_border,
-                            color: Color(0xffFF8993), size: 20),
+                            color: Color(0xffff0016), size: 20),
                         full: Icon(
                           Icons.favorite,
-                          color: Color(0xffFF8993),
+                          color: Color(0xffff0016),
                           size: 20,
                         ),
                         half: SizedBox(),
@@ -185,7 +185,7 @@ class _RatingBottomSheetState extends State<RatingBottomSheet> {
                                         MainAxisAlignment.spaceBetween,
                                     children: <Widget>[
                                       Text(
-                                        '21 likes',
+                                        '31 likes',
                                         style: TextStyle(
                                             color: Colors.grey[400],
                                             fontSize: 10.0),

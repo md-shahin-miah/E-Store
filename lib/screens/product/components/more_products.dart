@@ -42,6 +42,7 @@ class MoreProducts extends StatelessWidget {
           margin: EdgeInsets.only(bottom: 10.0,top: 10),
           height: 250,
           child: ListView.builder(
+            padding: EdgeInsets.only(left: 10,right: 10),
             itemCount: products.length,
             itemBuilder: (_, index) {
               return Padding(

@@ -36,7 +36,7 @@ class CreditCard extends StatelessWidget {
                 style: TextStyle(color: Colors.grey),
               ),
               Text(
-                'GEORGE W BUSH',
+                'Shahin Miah',
                 style: TextStyle(color: Colors.white),
               ),
             ],

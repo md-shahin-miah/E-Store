@@ -18,7 +18,7 @@ class RatingDialog extends StatelessWidget {
             .push(MaterialPageRoute(builder: (_) => CheckOutPage()));
       },
       child: Container(
-        height: 60,
+        height: 50,
         width: width / 1.5,
         decoration: BoxDecoration(
             gradient: mainButton,
@@ -79,10 +79,10 @@ class RatingDialog extends StatelessWidget {
               onRatingUpdate: (value) {},
               ratingWidget: RatingWidget(
                 empty: Icon(Icons.favorite_border,
-                    color: Color(0xffFF8993), size: 20),
+                    color: Color(0xffff0017), size: 20),
                 full: Icon(
                   Icons.favorite,
-                  color: Color(0xffFF8993),
+                  color: Color(0xffff0017),
                   size: 20,
                 ),
                 half: SizedBox(),

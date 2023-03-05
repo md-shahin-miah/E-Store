@@ -5,7 +5,7 @@ import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 import '../../../app_properties.dart';
 import '../../../models/product.dart';
 import '../../shop/check_out_page.dart';
-import 'shop_bottomSheet.dart';
+import 'shop_cart_add_bottomSheet.dart';
 
 class ProductOption extends StatelessWidget {
   final GlobalKey<ScaffoldState> scaffoldKey;

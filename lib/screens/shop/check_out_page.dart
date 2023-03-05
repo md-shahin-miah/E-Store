@@ -122,7 +122,7 @@ class _CheckOutPageState extends State<CheckOutPage> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.only(left: 16.0,right: 16,top: 5,bottom: 10),
                   child: Text(
                     'Payment',
                     style: TextStyle(

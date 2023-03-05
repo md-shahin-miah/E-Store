@@ -51,7 +51,7 @@ class _UnpaidPageState extends State<UnpaidPage> {
                         minHeight: constraints.maxHeight,
                       ),
                       child: Padding(
-                          padding: const EdgeInsets.only(top: kToolbarHeight),
+                          padding: const EdgeInsets.only(top: 10),
                           child: Column(children: <Widget>[
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 16.0),
@@ -73,7 +73,7 @@ class _UnpaidPageState extends State<UnpaidPage> {
                             ),
                             PromoItem(),
                             Container(
-                              margin: const EdgeInsets.all(16.0),
+                              margin: const EdgeInsets.only(left: 16,right: 16,top: 16,bottom: 16),
                               padding: const EdgeInsets.fromLTRB(
                                   16.0, 0, 16.0, 16.0),
                               decoration: BoxDecoration(
@@ -83,44 +83,58 @@ class _UnpaidPageState extends State<UnpaidPage> {
                                       bottomLeft: Radius.circular(10),
                                       bottomRight: Radius.circular(10))),
                               child: Column(
-                                mainAxisSize: MainAxisSize.min,
                                 children: <Widget>[
-                                  ListTile(
-                                    title: Text('Boat Rockerz 350 On-Ear ..'),
-                                    trailing: Text('74.68'),
+                                  SizedBox(
+                                    height: 40,
+                                    child: ListTile(
+                                      title: Text('Boat Rockerz 350 On-Ear ..'),
+                                      trailing: Text('64.68'),
+                                    ),
                                   ),
-                                  ListTile(
-                                    title: Text('Tax'),
-                                    trailing: Text('1.25'),
+                                  SizedBox(
+                                    height: 30,
+                                    child: ListTile(
+                                      title: Text('Tax'),
+                                      trailing: Text('2.25'),
+                                    ),
                                   ),
-                                  ListTile(
-                                    title: Text('Subtotal'),
-                                    trailing: Text('76.93'),
+                                  SizedBox(
+                                    height: 30,
+                                    child: ListTile(
+                                      title: Text('Subtotal'),
+                                      trailing: Text('66.93'),
+                                    ),
                                   ),
-                                  ListTile(
-                                    title: Text('Promocode'),
-                                    trailing: Text('-10.93'),
+                                  SizedBox(
+                                    height: 40,
+                                    child: ListTile(
+                                      title: Text('Promocode'),
+                                      trailing: Text('-5.93'),
+                                    ),
                                   ),
                                   Divider(),
-                                  ListTile(
-                                    title: Text(
-                                      'Total',
-                                      style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                    trailing: Text(
-                                      '\$ 66.93',
-                                      style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold),
+                                  SizedBox(
+                                    height: 40,
+                                    child: ListTile(
+                                      title: Text(
+                                        'Total',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                      trailing: Text(
+                                        '\$ 55.53',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.bold),
+                                      ),
                                     ),
                                   )
                                 ],
                               ),
                             ),
                             SizedBox(
-                              height: 24,
+                              height: 14,
                             ),
                             Padding(
                               padding: const EdgeInsets.only(bottom: 20),

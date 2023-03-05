@@ -87,7 +87,7 @@ class _SearchPageState extends State<SearchPage>
 
   Widget _getLowerLayer() {
     return Container(
-      margin: const EdgeInsets.only(top: kToolbarHeight),
+      margin: const EdgeInsets.only(top: 0),
       child: Column(
         children: <Widget>[
           Padding(
@@ -111,7 +111,7 @@ class _SearchPageState extends State<SearchPage>
             margin: EdgeInsets.symmetric(horizontal: 16.0),
             decoration: BoxDecoration(
                 border:
-                    Border(bottom: BorderSide(color: Colors.orange, width: 1))),
+                    Border(bottom: BorderSide(color: Colors.purpleAccent, width: 1))),
             child: TextField(
               controller: searchController,
               onChanged: (value) {
@@ -149,7 +149,7 @@ class _SearchPageState extends State<SearchPage>
                   },
                   child: Text(
                     'Clear',
-                    style: TextStyle(color: Colors.red),
+                    style: TextStyle(color: Colors.black54),
                   ),
                 ),
               ),
@@ -157,7 +157,7 @@ class _SearchPageState extends State<SearchPage>
           ),
           Flexible(
             child: Container(
-              color: Colors.orange[50],
+              color: Colors.teal[50],
               child: ListView.builder(
                   itemCount: searchResults.length,
                   itemBuilder: (_, index) => Padding(
@@ -199,7 +199,7 @@ class _SearchPageState extends State<SearchPage>
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 'Filters',
-                style: TextStyle(color: Colors.grey[300]),
+                style: TextStyle(color: Colors.grey[400]),
               ),
             ),
           ),
@@ -233,7 +233,7 @@ class _SearchPageState extends State<SearchPage>
                             vertical: 4.0, horizontal: 20.0),
                         decoration: selectedPeriod == timeFilter[index]
                             ? BoxDecoration(
-                                color: Color(0xffFDB846),
+                                color: Color(0xff028068),
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(45)))
                             : BoxDecoration(),
@@ -297,7 +297,7 @@ class _SearchPageState extends State<SearchPage>
                             vertical: 4.0, horizontal: 20.0),
                         decoration: selectedPrice == priceFilter[index]
                             ? BoxDecoration(
-                                color: Color(0xffFDB846),
+                                color: Color(0xffd962b0),
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(45)))
                             : BoxDecoration(),

@@ -12,7 +12,7 @@ class NotificationsPage extends StatelessWidget {
       color: Colors.grey[100],
       child: SafeArea(
         child: Container(
-            margin: const EdgeInsets.only(top: kToolbarHeight),
+            margin: const EdgeInsets.only(top: 0),
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             child: Column(children: <Widget>[
               Row(

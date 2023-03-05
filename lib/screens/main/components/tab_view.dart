@@ -7,6 +7,19 @@ import 'recommended_list.dart';
 class TabView extends StatelessWidget {
   List<Category> categories = [
     Category(
+      Color(0xff36E892),
+      Color(0xff33B2B9),
+      'Beauty',
+      'assets/jeans_5.png',
+    ),
+    Category(
+      Color(0xffF123C4),
+      Color(0xff668CEA),
+      'Appliance',
+      'assets/jeans_5.png',
+    ),
+
+    Category(
       Color(0xffFCE183),
       Color(0xffF68D7F),
       'Gadgets',
@@ -30,18 +43,8 @@ class TabView extends StatelessWidget {
       'Home',
       'assets/jeans_5.png',
     ),
-    Category(
-      Color(0xff36E892),
-      Color(0xff33B2B9),
-      'Beauty',
-      'assets/jeans_5.png',
-    ),
-    Category(
-      Color(0xffF123C4),
-      Color(0xff668CEA),
-      'Appliances',
-      'assets/jeans_5.png',
-    ),
+
+
   ];
 
   final TabController tabController;

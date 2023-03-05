@@ -27,7 +27,7 @@ class ProfilePage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'Rose Helbert',
+                    'Shahin Miah',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),

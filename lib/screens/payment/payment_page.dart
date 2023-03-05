@@ -90,7 +90,7 @@ class _PaymentPageState extends State<PaymentPage> {
                 minHeight: constraints.maxHeight,
               ),
               child: Container(
-                margin: const EdgeInsets.only(top: kToolbarHeight),
+                margin: const EdgeInsets.only(top: 20),
                 padding: EdgeInsets.symmetric(horizontal: 16.0),
                 child: Column(
                   children: <Widget>[

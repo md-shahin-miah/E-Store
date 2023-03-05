@@ -50,6 +50,8 @@ class _CategoryListPageState extends State<CategoryListPage> {
       'Appliances',
       'assets/jeans_5.png',
     ),
+
+
   ];
 
   List<Category> searchResults = [];
@@ -66,7 +68,7 @@ class _CategoryListPageState extends State<CategoryListPage> {
     return Material(
       color: Color(0xffF9F9F9),
       child: Container(
-        margin: const EdgeInsets.only(top: kToolbarHeight),
+        margin: const EdgeInsets.only(top: 10),
         padding: EdgeInsets.symmetric(horizontal: 16.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,

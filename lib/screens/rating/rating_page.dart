@@ -167,7 +167,7 @@ class _RatingPageState extends State<RatingPage> {
                                                       .spaceBetween,
                                               children: <Widget>[
                                                 Text(
-                                                  'Billy Holand',
+                                                  'Sottobroto chow',
                                                   style: TextStyle(
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -195,11 +195,11 @@ class _RatingPageState extends State<RatingPage> {
                                                 ratingWidget: RatingWidget(
                                                   empty: Icon(
                                                       Icons.favorite_border,
-                                                      color: Color(0xffFF8993),
+                                                      color: Color(0xffff0014),
                                                       size: 20),
                                                   full: Icon(
                                                     Icons.favorite,
-                                                    color: Color(0xffFF8993),
+                                                    color: Color(0xffff0015),
                                                     size: 20,
                                                   ),
                                                   half: SizedBox(),

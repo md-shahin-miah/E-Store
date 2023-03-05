@@ -22,17 +22,15 @@ class _ShopItemListState extends State<ShopItemList> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 5, left: 10, right: 10, bottom: 5),
+      margin: EdgeInsets.only(top: 0, left: 10, right: 10, bottom: 0),
       height: 130,
       child: Stack(
-        alignment: Alignment.centerRight,
         children: <Widget>[
           Align(
-
-            // alignment: Alignment(0, 0.9),
+            alignment: Alignment(0, 0.9),
             child: Container(
                 height: 100,
-                margin: EdgeInsets.only(left: 5.0),
+                margin: EdgeInsets.only(left: 15.0,right: 5,top: 5,bottom: 5),
                 decoration: BoxDecoration(
                     color: Colors.white,
                     boxShadow: shadow,
@@ -44,7 +42,7 @@ class _ShopItemListState extends State<ShopItemList> {
                     children: <Widget>[
                       Container(
                         padding: EdgeInsets.only(top: 12.0, right: 2.0),
-                        width: 200,
+                        width: 180,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
@@ -66,7 +64,7 @@ class _ShopItemListState extends State<ShopItemList> {
                               child: Container(
                                 width: 140,
                                 padding: const EdgeInsets.only(
-                                    left: 32.0, top: 8.0, bottom: 8.0),
+                                    left: 22.0, top: 8.0, bottom: 8.0),
                                 child: Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
@@ -87,39 +85,44 @@ class _ShopItemListState extends State<ShopItemList> {
                           ],
                         ),
                       ),
-                      Theme(
-                          data: ThemeData(
-                              accentColor: Colors.black,
-                              textTheme: TextTheme(
-                                headline6: TextStyle(
+                      Container(
+                        width: 60,
+
+                        child: Theme(
+                            data: ThemeData(
+                                accentColor: Colors.black,
+                                textTheme: TextTheme(
+                                  headline6: TextStyle(
+                                      fontFamily: 'Montserrat',
+                                      fontSize: 12,
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.bold),
+                                  bodyText1: TextStyle(
                                     fontFamily: 'Montserrat',
                                     fontSize: 12,
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.bold),
-                                bodyText1: TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  fontSize: 12,
-                                  color: Colors.grey[400],
-                                ),
-                              )),
-                          child: NumberPicker(
-                            value: quantity,
-                            minValue: 1,
-                            maxValue: 10,
-                            onChanged: (value) {
-                              setState(() {
-                                quantity = value;
-                              });
-                            },
-                          ))
+                                    color: Colors.grey[400],
+                                  ),
+                                )),
+                            child: NumberPicker(
+                              value: quantity,
+                              minValue: 1,
+                              maxValue: 10,
+                              onChanged: (value) {
+                                setState(() {
+                                  quantity = value;
+                                });
+                              },
+                            )),
+                      )
                     ])),
           ),
-          // Positioned(
-          //     top: 5,
-          //     child: ShopProductDisplay(
-          //       widget.product,
-          //       onPressed: widget.onRemove,
-          //     )),
+          Positioned(
+              top: 5,
+              left: 5,
+              child: ShopProductDisplay(
+                widget.product,
+                onPressed: widget.onRemove,
+              )),
         ],
       ),
     );
