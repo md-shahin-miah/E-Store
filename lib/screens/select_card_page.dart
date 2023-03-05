@@ -56,7 +56,7 @@ class SelectCardPage extends StatelessWidget {
                           ),
                         ),
                         Spacer(),
-                        Text('4452 - 8645 - 4524 - 2413',
+                        Text('4552 - 7648 - 4584 - 8483',
                             style: TextStyle(
                                 color: Color.fromRGBO(255, 255, 255, 0.3),
                                 fontSize: 16.0)),
@@ -120,12 +120,12 @@ class SelectCardPage extends StatelessWidget {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: <Widget>[
-                              Text('Roberto',
+                              Text('Shahin',
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 10.0)),
                               SizedBox(height: 8.0),
-                              Text('4452-8645-4524-2413',
+                              Text('4242-4242-4242-4242',
                                   style: TextStyle(
                                       color: Colors.grey, fontSize: 10.0))
                             ],
@@ -184,7 +184,8 @@ class SelectCardPage extends StatelessWidget {
                             ],
                           )
                         ],
-                      )),
+                      )
+                  ),
                 )
               ],
             ),

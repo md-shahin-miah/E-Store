@@ -56,13 +56,13 @@ class ShopProductDisplay extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 150,
-      width: 180,
+      width: 140,
       child: Stack(children: <Widget>[
         Positioned(
           left: 0,
           child: SizedBox(
             height: 150,
-            width: 150,
+            width: 100,
             child: Transform.scale(
               scale: 1.2,
               child: Image.asset('assets/bottom_yellow.png'),
@@ -73,8 +73,8 @@ class ShopProductDisplay extends StatelessWidget {
           left: 10,
           top: 5,
           child: SizedBox(
-              height: 80,
-              width: 80,
+              height: 70,
+              width: 70,
               child: Image.asset(
                 '${product.image}',
                 fit: BoxFit.contain,

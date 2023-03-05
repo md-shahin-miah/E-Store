@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:numberpicker/numberpicker.dart';
 
@@ -23,15 +22,17 @@ class _ShopItemListState extends State<ShopItemList> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 10),
+      margin: EdgeInsets.only(top: 5, left: 10, right: 10, bottom: 5),
       height: 130,
       child: Stack(
+        alignment: Alignment.centerRight,
         children: <Widget>[
           Align(
-            alignment: Alignment(0, 0.9),
+
+            // alignment: Alignment(0, 0.9),
             child: Container(
                 height: 100,
-                margin: EdgeInsets.symmetric(horizontal: 10.0),
+                margin: EdgeInsets.only(left: 5.0),
                 decoration: BoxDecoration(
                     color: Colors.white,
                     boxShadow: shadow,
@@ -47,19 +48,23 @@ class _ShopItemListState extends State<ShopItemList> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            Text(
-                              widget.product.name,
-                              textAlign: TextAlign.right,
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 12,
-                                color: darkGrey,
+                            Align(
+                              alignment: Alignment.centerRight,
+
+                              child: Text(
+                                widget.product.name,
+                                textAlign: TextAlign.right,
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                  color: darkGrey,
+                                ),
                               ),
                             ),
                             Align(
                               alignment: Alignment.centerRight,
                               child: Container(
-                                width: 160,
+                                width: 140,
                                 padding: const EdgeInsets.only(
                                     left: 32.0, top: 8.0, bottom: 8.0),
                                 child: Row(
@@ -109,12 +114,12 @@ class _ShopItemListState extends State<ShopItemList> {
                           ))
                     ])),
           ),
-          Positioned(
-              top: 5,
-              child: ShopProductDisplay(
-                widget.product,
-                onPressed: widget.onRemove,
-              )),
+          // Positioned(
+          //     top: 5,
+          //     child: ShopProductDisplay(
+          //       widget.product,
+          //       onPressed: widget.onRemove,
+          //     )),
         ],
       ),
     );

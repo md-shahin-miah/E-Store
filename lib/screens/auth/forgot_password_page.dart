@@ -17,7 +17,6 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
 
   GlobalKey prefixKey = GlobalKey();
   double prefixWidth = 0;
-
   Widget prefix() {
     return Container(
       key: prefixKey,
