@@ -1,5 +1,5 @@
 # E-Store
-
+##manage store
 
 <img src="https://user-images.githubusercontent.com/68494371/222974037-4e16e2ea-ceda-4913-a1dc-826087630626.png" alt="alt home" style="width:30%;height:80">| <img src="https://user-images.githubusercontent.com/68494371/222974042-6e5f80d0-c417-4f96-b74c-0ff1879a4a7e.png" alt="alt home" style="width:30%;height:80">|<img src="https://user-images.githubusercontent.com/68494371/222974047-e2e437a4-5500-428c-87d1-eb227ff12f0c.png" alt="alt home" style="width:30%;height:80">
 
